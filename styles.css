@@ -1,0 +1,137 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.dark ::-webkit-scrollbar-track {
+  background-color: #1f2937; /* gray-800 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* gray-400 */
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* gray-600 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280; /* gray-500 */
+}
+
+/* Selection */
+::selection {
+  background-color: #14b8a6; /* accent-500 */
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #14b8a6;
+  color: white;
+}
+
+
+.filter-btn:hover {
+  border-color: #14b8a6;
+  color: #14b8a6;
+}
+
+.filter-btn:focus {
+  outline: 2px solid #14b8a6;
+  outline-offset: 2px;
+}
+
+.filter-btn.active {
+  background-color: #14b8a6;
+  color: white;
+  border-color: #14b8a6;
+}
+
+.filter-btn.active:hover {
+  background-color: #0d9488;
+  border-color: #0d9488;
+}
+
+.dark .filter-btn {
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.dark .filter-btn:hover {
+  border-color: #14b8a6;
+  color: #14b8a6;
+}
+
+.dark .filter-btn:focus {
+  outline-offset: 2px;
+}
+
+.card:hover {
+  box-shadow: 0 25px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: #111827;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #14b8a6;
+}
+
+.dark .nav-link {
+  color: #f9fafb;
+}
+
+.dark .nav-link:hover {
+  color: #14b8a6;
+}
+
+.form-input:focus {
+  outline: 2px solid #14b8a6;
+  border-color: #14b8a6;
+}
+
+.dark .form-input {
+  border-color: #4b5563;
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.form-textarea:focus {
+  outline: 2px solid #14b8a6;
+  border-color: #14b8a6;
+}
+
+.dark .form-textarea {
+  border-color: #4b5563;
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+
