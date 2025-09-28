@@ -9,7 +9,7 @@ const projectsData = [
       "A website created for the simplification of taking orders from customers.",
     longDescription:
       "",
-    image: "public/modern-ecommerce-interface.png",
+    image: "images/novel horizon.png",
     technologies: ["HTML5", "CSS3", "Javascript"],
     category: "web",
     featured: true,
@@ -21,13 +21,13 @@ const projectsData = [
     id: 2,
     title: "Task Management App",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      "A full-featured task management application designed to enhance productivity and discipline.",
     longDescription:
       "A modern task management solution that enables teams to collaborate effectively with real-time updates, intuitive drag-and-drop interfaces, and comprehensive project tracking capabilities.",
-    image: "public/task-management-dashboard.png",
-    technologies: ["React", "Firebase", "Tailwind CSS", "Socket.io", "Redux"],
+    image: "images/tasks flow.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Python", "Flask"],
     category: "web",
-    featured: true,
+    featured: false,
     githubUrl: "https://github.com/raheem-akapo/task-manager",
     liveUrl: "https://taskmanager-demo.vercel.app",
     features: ["Real-time Collaboration", "Drag & Drop", "Team Management", "Progress Tracking", "Notifications"],
@@ -51,10 +51,10 @@ const projectsData = [
     id: 4,
     title: "Bridge",
     description:
-      "A transcription and translation app that uses AI to provide accurate and context-aware translations in multiple languages.",
+      "A transcription and translation app that uses AI to provide accurate and context-aware translations in multiple Nigerian languages.",
     longDescription:
       "A mobile application that leverages AI to offer seamless speech-to-text transcription and context-aware translations across multiple languages, enhancing communication for users worldwide.",
-    image: "/mobile-banking-app.png",
+    image: "images/bridge.png",
     technologies: ["React", "TailwindCSS", "flask", "Spitch API"],
     category: "api",
     featured: true,
@@ -64,34 +64,34 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "RESTful API Gateway",
+    title: "Tech Community E-Registration Platform",
     description:
-      "A scalable API gateway built with microservices architecture, featuring rate limiting, authentication, and comprehensive logging.",
+      "A website created for the registration of participants for a Hackathon",
     longDescription:
-      "A robust API gateway solution designed to handle high-traffic applications with advanced features like rate limiting, request routing, and comprehensive monitoring.",
-    image: "/api-gateway-architecture-diagram.jpg",
-    technologies: ["Node.js", "Express", "Redis", "Docker", "Nginx", "MongoDB"],
-    category: "api",
-    featured: false,
-    githubUrl: "https://github.com/raheem-akapo/api-gateway",
-    liveUrl: "https://api-gateway-docs.vercel.app",
-    features: ["Rate Limiting", "Load Balancing", "Authentication", "Monitoring", "Documentation"],
-  },
-  {
-    id: 6,
-    title: "Social Media Dashboard",
-    description:
-      "A comprehensive social media management platform with analytics, scheduling, and multi-platform integration.",
-    longDescription:
-      "An all-in-one social media management solution that helps businesses and creators manage their online presence across multiple platforms with advanced analytics and automation.",
-    image: "/social-media-dashboard.png",
-    technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
+      "A website created for the registration of participants for a Hackathon",
+    image: "images/techstars.png",
+    technologies: ["HTML5", "CSS3", "Google Forms"],
     category: "web",
     featured: false,
-    githubUrl: "https://github.com/raheem-akapo/social-dashboard",
-    liveUrl: "https://social-dashboard-demo.vercel.app",
-    features: ["Multi-platform", "Analytics", "Post Scheduling", "Team Collaboration", "Content Calendar"],
+    githubUrl: "https://github.com/raheem-akapo/techstars-hackathon",
+    liveUrl: "https://techstars-hackathon.vercel.app",
+    features: ["Ease of Registration", "I dunno", "Figure it out"],
   },
+  // {
+  //   id: 6,
+  //   title: "Social Media Dashboard",
+  //   description:
+  //     "A comprehensive social media management platform with analytics, scheduling, and multi-platform integration.",
+  //   longDescription:
+  //     "An all-in-one social media management solution that helps businesses and creators manage their online presence across multiple platforms with advanced analytics and automation.",
+  //   image: "/social-media-dashboard.png",
+  //   technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
+  //   category: "web",
+  //   featured: false,
+  //   githubUrl: "https://github.com/raheem-akapo/social-dashboard",
+  //   liveUrl: "https://social-dashboard-demo.vercel.app",
+  //   features: ["Multi-platform", "Analytics", "Post Scheduling", "Team Collaboration", "Content Calendar"],
+  // },
 ]
 
 // Projects page manager
