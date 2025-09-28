@@ -39,7 +39,7 @@ const projectsData = [
       "An AI-powered therapist chatbot that provides emotional support and mental health resources through natural language processing and empathetic conversations.",
     longDescription:
       "An AI-powered therapist chatbot that provides emotional support and mental health resources through natural language processing and empathetic conversations.",
-    image: "public/weather-analytics-dashboard-with-charts.jpg",
+    image: "images/rose home.png",
     technologies: ["HTML5", "CSS3", "Python", "Flask", "Gemini API", "JavaScript", "Langchain"],
     category: "web",
     featured: true,
