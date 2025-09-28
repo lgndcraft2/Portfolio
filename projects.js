@@ -4,18 +4,18 @@
 const projectsData = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "E-Restaurant Platform",
     description:
-      "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
+      "A website created for the simplification of taking orders from customers.",
     longDescription:
-      "This comprehensive e-commerce platform provides a complete online shopping experience with modern features and robust architecture. Built with scalability in mind, it handles everything from product catalog management to secure payment processing.",
+      "",
     image: "public/modern-ecommerce-interface.png",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT", "Express"],
+    technologies: ["HTML5", "CSS3", "Javascript"],
     category: "web",
     featured: true,
-    githubUrl: "https://github.com/raheem-akapo/ecommerce-platform",
-    liveUrl: "https://ecommerce-demo.vercel.app",
-    features: ["User Authentication", "Payment Processing", "Admin Dashboard", "Product Management", "Order Tracking"],
+    githubUrl: "https://github.com/raheem-akapo/novel-horizon",
+    liveUrl: "https://novel-horizon.vercel.app",
+    features: [],
   },
   {
     id: 2,
@@ -34,33 +34,33 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Weather Analytics Dashboard",
+    title: "Rant With Rose",
     description:
-      "A data visualization dashboard that displays weather patterns and analytics using real-time weather APIs and interactive charts.",
+      "An AI-powered therapist chatbot that provides emotional support and mental health resources through natural language processing and empathetic conversations.",
     longDescription:
-      "An advanced weather analytics platform that transforms raw meteorological data into actionable insights through beautiful visualizations and comprehensive reporting tools.",
+      "An AI-powered therapist chatbot that provides emotional support and mental health resources through natural language processing and empathetic conversations.",
     image: "public/weather-analytics-dashboard-with-charts.jpg",
-    technologies: ["Vue.js", "D3.js", "Express", "Weather API", "Chart.js"],
+    technologies: ["HTML5", "CSS3", "Python", "Flask", "Gemini API", "JavaScript", "Langchain"],
     category: "web",
     featured: true,
-    githubUrl: "https://github.com/raheem-akapo/weather-dashboard",
-    liveUrl: "https://weather-analytics.vercel.app",
-    features: ["Real-time Data", "Interactive Charts", "Historical Analysis", "Location-based", "Export Reports"],
+    githubUrl: "https://github.com/raheem-akapo/rant-with-rose",
+    liveUrl: "https://rant-with-rose.vercel.app",
+    features: ["AI Chatbot", "Emotional Support", "Mental Health Resources", "Natural Language Processing", "User-friendly Interface"],
   },
   {
     id: 4,
-    title: "Mobile Banking App",
+    title: "Bridge",
     description:
-      "A secure mobile banking application with biometric authentication, transaction history, and budget tracking features.",
+      "A transcription and translation app that uses AI to provide accurate and context-aware translations in multiple languages.",
     longDescription:
-      "A comprehensive mobile banking solution that prioritizes security and user experience, offering all essential banking features in an intuitive mobile interface.",
+      "A mobile application that leverages AI to offer seamless speech-to-text transcription and context-aware translations across multiple languages, enhancing communication for users worldwide.",
     image: "/mobile-banking-app.png",
-    technologies: ["React Native", "Node.js", "PostgreSQL", "JWT", "Biometric Auth"],
-    category: "mobile",
-    featured: false,
-    githubUrl: "https://github.com/raheem-akapo/mobile-banking",
-    liveUrl: "https://banking-app-demo.vercel.app",
-    features: ["Biometric Auth", "Transaction History", "Budget Tracking", "Bill Payments", "Account Management"],
+    technologies: ["React", "TailwindCSS", "flask", "Spitch API"],
+    category: "api",
+    featured: true,
+    githubUrl: "https://github.com/emafido-emmanuel/bridge",
+    liveUrl: "https://bridge-connect-ecru.vercel.app",
+    features: ["Speech-to-Text", "Multi-language Support", "Context-aware Translations", "User-friendly Interface"],
   },
   {
     id: 5,
@@ -177,24 +177,6 @@ class ProjectsPageManager {
                 >
                     Live Demo
                 </a>
-            </div>
-
-            <div class="border-t border-gray-200 dark:border-gray-700 pt-4">
-                <h4 class="text-sm font-medium text-light-text dark:text-dark-text mb-2">Key Features:</h4>
-                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
-                    ${project.features
-                      .slice(0, 3)
-                      .map(
-                        (feature) =>
-                          `<li class="flex items-center">
-                            <svg class="w-3 h-3 text-accent-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            ${feature}
-                        </li>`,
-                      )
-                      .join("")}
-                </ul>
             </div>
         `
 
