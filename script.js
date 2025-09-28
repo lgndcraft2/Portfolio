@@ -53,22 +53,22 @@ class NavigationManager {
   }
 
   init() {
-    this.setupScrollEffect()
+    // this.setupScrollEffect()
     this.setupMobileMenu()
     this.setupSmoothScrolling()
   }
 
-  setupScrollEffect() {
-    window.addEventListener("scroll", () => {
-      const isScrolled = window.scrollY > 50
+  // setupScrollEffect() {
+  //   window.addEventListener("scroll", () => {
+  //     const isScrolled = window.scrollY > 50
 
-      if (isScrolled) {
-        this.navbar.classList.add("bg-white/90", "dark:bg-gray-900/90", "backdrop-blur-md", "shadow-lg")
-      } else {
-        this.navbar.classList.remove("bg-white/90", "dark:bg-gray-900/90", "backdrop-blur-md", "shadow-lg")
-      }
-    })
-  }
+  //     if (isScrolled) {
+  //       this.navbar.classList.add("bg-white/90", "dark:bg-gray-900/90", "backdrop-blur-md", "shadow-lg")
+  //     } else {
+  //       this.navbar.classList.remove("bg-white/90", "dark:bg-gray-900/90", "backdrop-blur-md", "shadow-lg")
+  //     }
+  //   })
+  // }
 
   setupMobileMenu() {
     if (this.mobileMenuBtn) {
