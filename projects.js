@@ -77,6 +77,21 @@ const projectsData = [
     liveUrl: "https://techstars-hackathon.vercel.app",
     features: ["Ease of Registration", "I dunno", "Figure it out"],
   },
+  {
+    id: 6,
+    title: "Echo Watch",
+    description:
+      "A real-time AI-powered system for detecting potential public threats using live camera feeds.",
+    longDescription:
+      "A real-time AI-powered system for detecting potential public threats using live camera feeds.",
+    image: "images/echowatch.png",
+    technologies: ["HTML5", "TailwindCSS", "JavaScript", "Tensorflow.js"],
+    category: "web",
+    featured: false,
+    githubUrl: "https://github.com/Sadiq-Teslim/echowatch",
+    liveUrl: "https://echowatch.netlify.app",
+    features: ["AI-powered", "Security", "Predictive"],
+  },
   // {
   //   id: 6,
   //   title: "Social Media Dashboard",
