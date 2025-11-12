@@ -1,5 +1,19 @@
 {
+  "rewrites": [
+    { "source": "/", "destination": "/home/index.html" },
+    { "source": "/projects", "destination": "/projects/index.html" },
+    { "source": "/:any*", "destination": "/:any*" }
+  ],
   "redirects": [
-    { "source": "/", "destination": "/home" }
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/projects/index.html",
+      "destination": "/projects",
+      "permanent": true
+    }
   ]
 }
