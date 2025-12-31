@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raheem-akapo.vercel.app/sitemap.xml
+Sitemap: https://raheem-akapo.tech/sitemap.xml

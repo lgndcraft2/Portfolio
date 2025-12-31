@@ -14,7 +14,7 @@ const projectsData = [
     category: "web",
     featured: true,
     githubUrl: "https://github.com/lgndcraft2/novel-horizon",
-    liveUrl: "https://novel-horizon.vercel.app",
+    liveUrl: "https://novel-horizon.tech",
     features: [],
   },
   {
@@ -29,7 +29,7 @@ const projectsData = [
     category: "web",
     featured: false,
     githubUrl: "https://github.com/lgndcraft2/tasks-flow",
-    liveUrl: "https://taskmanager-demo.vercel.app",
+    liveUrl: "https://taskmanager-demo.tech",
     features: ["Real-time Collaboration", "Drag & Drop", "Team Management", "Progress Tracking", "Notifications"],
   },
   {
@@ -59,7 +59,7 @@ const projectsData = [
     category: "api",
     featured: true,
     githubUrl: "https://github.com/emafido-emmanuel/bridge",
-    liveUrl: "https://bridge-connect-ecru.vercel.app",
+    liveUrl: "https://bridge-connect-ecru.tech",
     features: ["Speech-to-Text", "Multi-language Support", "Context-aware Translations", "User-friendly Interface"],
   },
   {
@@ -74,7 +74,7 @@ const projectsData = [
     category: "web",
     featured: false,
     githubUrl: "https://github.com/lgndcraft2/techstars-hackathon",
-    liveUrl: "https://techstars-hackathon.vercel.app",
+    liveUrl: "https://techstars-hackathon.tech",
     features: ["Ease of Registration", "I dunno", "Figure it out"],
   },
   {
@@ -104,7 +104,7 @@ const projectsData = [
   //   category: "web",
   //   featured: false,
   //   githubUrl: "https://github.com/lgndcraft2/social-dashboard",
-  //   liveUrl: "https://social-dashboard-demo.vercel.app",
+  //   liveUrl: "https://social-dashboard-demo.tech",
   //   features: ["Multi-platform", "Analytics", "Post Scheduling", "Team Collaboration", "Content Calendar"],
   // },
 ]
@@ -168,11 +168,11 @@ class ProjectsPageManager {
 
             <div class="flex flex-wrap gap-2 mb-4">
                 ${project.technologies
-                  .map(
-                    (tech) =>
-                      `<span class="px-3 py-1 bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 text-xs rounded-full">${tech}</span>`,
-                  )
-                  .join("")}
+        .map(
+          (tech) =>
+            `<span class="px-3 py-1 bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 text-xs rounded-full">${tech}</span>`,
+        )
+        .join("")}
             </div>
 
             <div class="flex gap-3 mb-4">
