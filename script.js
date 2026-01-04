@@ -195,14 +195,17 @@ class ScrollAnimationManager {
 // 5. Get your Service ID from Email Services
 // 6. Get your Template ID from Email Templates
 // 7. Replace the placeholder values below with your actual credentials
+
+// EmailJS Configuration Constants
+// TODO: Replace these with your actual EmailJS credentials
+const EMAILJS_CONFIG = Object.freeze({
+  PUBLIC_KEY: "YOUR_PUBLIC_KEY_HERE",
+  SERVICE_ID: "YOUR_SERVICE_ID_HERE",
+  TEMPLATE_ID: "YOUR_TEMPLATE_ID_HERE"
+})
+
 class ContactFormManager {
   constructor() {
-    // EmailJS Configuration
-    // TODO: Replace these with your actual EmailJS credentials
-    this.EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY_HERE"
-    this.EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID_HERE"
-    this.EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID_HERE"
-
     this.form = document.getElementById("contact-form")
     this.submitBtn = document.getElementById("submit-btn")
     this.submitText = document.getElementById("submit-text")
@@ -210,7 +213,9 @@ class ContactFormManager {
     
     // Initialize EmailJS with public key
     if (typeof emailjs !== 'undefined') {
-      emailjs.init(this.EMAILJS_PUBLIC_KEY)
+      emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY)
+    } else {
+      console.error('EmailJS SDK is not loaded. Please check your internet connection or CDN availability.')
     }
     
     this.init()
@@ -235,7 +240,7 @@ class ContactFormManager {
     try {
       // Check if EmailJS is loaded
       if (typeof emailjs === 'undefined') {
-        throw new Error('EmailJS is not loaded. Please check your internet connection.')
+        throw new Error('EmailJS service is not available. Please try again later.')
       }
 
       // Prepare template parameters for EmailJS
@@ -248,8 +253,8 @@ class ContactFormManager {
 
       // Send email using EmailJS
       await emailjs.send(
-        this.EMAILJS_SERVICE_ID,
-        this.EMAILJS_TEMPLATE_ID,
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
         templateParams
       )
 
