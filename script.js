@@ -183,12 +183,41 @@ class ScrollAnimationManager {
 }
 
 // Contact form management
+// EmailJS Setup Instructions:
+// 1. Create an account at https://www.emailjs.com/
+// 2. Add an email service (e.g., Gmail, Outlook) in the Email Services section
+// 3. Create an email template with the following variables:
+//    - {{from_name}} - Sender's name
+//    - {{from_email}} - Sender's email address
+//    - {{subject}} - Email subject
+//    - {{message}} - Email message content
+// 4. Get your Public Key from Account > General
+// 5. Get your Service ID from Email Services
+// 6. Get your Template ID from Email Templates
+// 7. Replace the placeholder values below with your actual credentials
+
+// EmailJS Configuration Constants
+// TODO: Replace these with your actual EmailJS credentials
+const EMAILJS_CONFIG = Object.freeze({
+  PUBLIC_KEY: "YOUR_PUBLIC_KEY_HERE",
+  SERVICE_ID: "YOUR_SERVICE_ID_HERE",
+  TEMPLATE_ID: "YOUR_TEMPLATE_ID_HERE"
+})
+
 class ContactFormManager {
   constructor() {
     this.form = document.getElementById("contact-form")
     this.submitBtn = document.getElementById("submit-btn")
     this.submitText = document.getElementById("submit-text")
     this.submitLoading = document.getElementById("submit-loading")
+    
+    // Initialize EmailJS with public key
+    if (typeof emailjs !== 'undefined') {
+      emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY)
+    } else {
+      console.error('EmailJS SDK is not loaded. Please check your internet connection or CDN availability.')
+    }
+    
     this.init()
   }
 
@@ -209,10 +238,27 @@ class ContactFormManager {
     this.setLoadingState(true)
 
     try {
-      // Simulate form submission (replace with actual API call)
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      // Check if EmailJS is loaded
+      if (typeof emailjs === 'undefined') {
+        throw new Error('EmailJS service is not available. Please try again later.')
+      }
 
-      console.log("Form submitted:", data)
+      // Prepare template parameters for EmailJS
+      const templateParams = {
+        from_name: data.name,
+        from_email: data.email,
+        subject: data.subject,
+        message: data.message
+      }
+
+      // Send email using EmailJS
+      await emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        templateParams
+      )
+
+      console.log("Form submitted successfully:", data)
       alert("Thank you for your message! I'll get back to you soon.")
 
       // Reset form
