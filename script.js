@@ -199,8 +199,8 @@ class ScrollAnimationManager {
 // EmailJS Configuration Constants
 // TODO: Replace these with your actual EmailJS credentials
 const EMAILJS_CONFIG = Object.freeze({
-  PUBLIC_KEY: "YOUR_PUBLIC_KEY_HERE",
-  SERVICE_ID: "",
+  PUBLIC_KEY: "p-tIAps-4lC9Ab4ix",
+  SERVICE_ID: "service_gr90wlh",
   TEMPLATE_ID: "template_0e60g1e"
 })
 
